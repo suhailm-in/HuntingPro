@@ -95,9 +95,14 @@ This project is Licensed under the GNU GPLv3 - see the [LICENSE](LICENSE) for mo
 - [Waybackurls](https://github.com/tomnomnom/waybackurls)
 
 ## Developed by
+### Suhail M 
+Ethical Hacker, Penetration Tester, and AI Researcher in Cybersecurity
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/suhailm_in" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="suhailm_online" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/suhailm-in" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="suhailm-online" height="30" width="40" /></a></p>
 
-### [Suhail M](https://www.linkedin.com/in/suhailm-in/)
-- Ethical Hacker, Penetration Tester, and AI Researcher in Cybersecurity
+
 
 
 
