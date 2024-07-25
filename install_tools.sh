@@ -10,13 +10,15 @@ go get -u github.com/tomnomnom/assetfinder
 
 # Install Findomain
 echo "Installing Findomain..."
-curl -LO https://github.com/Findomain/Findomain/releases/latest/download/findomain-linux
-chmod +x findomain-linux
-sudo mv findomain-linux /usr/local/bin/findomain
+curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
+unzip findomain-linux-i386.zip
+chmod +x findomain
+sudo mv findomain /usr/local/bin/findomain
+rm findomain-linux-i386.zip
 
 # Install Amass
 echo "Installing Amass..."
-GO111MODULE=on go install -v github.com/OWASP/Amass/v3/...@master
+GO111MODULE=on go install -v github.com/owasp-amass/amass/v4/...@master
 
 # Install Httpx-toolkit
 echo "Installing Httpx-toolkit..."
