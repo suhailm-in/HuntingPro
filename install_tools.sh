@@ -21,8 +21,12 @@ echo "Installing Amass..."
 GO111MODULE=on go install -v github.com/owasp-amass/amass/v4/...@master
 
 # Install Httpx-toolkit
-echo "Installing Httpx-toolkit..."
+echo "Installing Httpx"
 GO111MODULE=on go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+
+# Install Httpx-toolkit
+echo "Installing Httpx-toolkit..."
+sudo apt install httpx-toolkit
 
 # Install Katana
 echo "Installing Katana..."
