@@ -294,6 +294,10 @@ def main():
     parser.add_argument('-v', '--version', action='version', version='HuntingPro 3.7')
     parser.add_argument('-u', '--update', action='store_true', help='Update Hunting Pro to the latest version')
     args = parser.parse_args()
+    
+    if args.update:
+        update_tool()
+        return
 
     global timeout
     timeout = args.seconds
