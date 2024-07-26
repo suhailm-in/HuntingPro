@@ -45,6 +45,11 @@ chmod +x install_tools.sh
 ./install_tools.sh
 ```
 
+### or
+```
+pip3 install -r requirements.txt && ./install_tools.sh
+```
+
 ## Usage
 - To enumerate subdomains for a single domain:
 ```
@@ -64,12 +69,13 @@ python3 hunterpro.py -d example.com -s 180
 - -d, --domain: The target domain for active enumeration
 - -t, --target-file: File containing a list of target domains for passive enumeration
 - -s, --seconds: Timeout in seconds for each tool (default: 120 seconds)
-
+- -v, --version: show program's version number and exit
+- -u, --update: Update Hunting Pro to the latest version
+  
 ### Output
 
 The tool generates a folder named Result containing the results. Inside this folder, you will find:
 
-- subdomains.txt: List of subdomains
 - subdomains_alive.txt: List of alive subdomains
 - katana_urls.txt: URLs extracted using Katana
 - gau_urls.txt: URLs extracted using gau
