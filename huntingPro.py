@@ -265,6 +265,25 @@ def main():
     # Print the title
     print(print_title())
 
+def update_tool():
+    try:
+        # Change this to your tool's repository URL
+        repo_url = "https://github.com/suhailm-in/HuntingPro.git"
+        # Check if the script is running from a git repository
+        if os.path.exists(".git"):
+            print("[*] Updating Hunting Pro...")
+            command = f"git pull {repo_url}"
+            process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            stdout, stderr = process.communicate()
+            if process.returncode == 0:
+                print("[*] Hunting Pro has been updated successfully.")
+            else:
+                print(f"[!] Update failed with return code {process.returncode}")
+                print(stderr)
+        else:
+            print("[-] This script is not running from a git repository. Update manually from the GitHub repository.")
+    except Exception as e:
+        print(f"Error updating tool: {e}")
 
 def main():
     # Print the title
@@ -272,8 +291,8 @@ def main():
     parser = argparse.ArgumentParser(description='Hunting Pro - Subdomain Enumeration Tool')
     parser.add_argument('-d', '--domain', help='The target domain for active enumeration')
     parser.add_argument('-t', '--target-file', help='File containing a list of target domains for passive enumeration')
-    parser.add_argument('-s', '--seconds', type=int, default=120,
-                        help='Timeout in seconds for each tool (default: 120 seconds)')
+    parser.add_argument('-s', '--seconds', type=int, default=120, help='Timeout in seconds for each tool (default: 120 seconds)')
+    parser.add_argument('-u', '--update', action='store_true', help='Update Hunting Pro to the latest version')
     args = parser.parse_args()
 
     global timeout
