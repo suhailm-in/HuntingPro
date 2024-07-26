@@ -46,12 +46,12 @@ fi
 if command_exists httpx; then
     echo "Httpx is already installed."
 else
-    echo "Installing Httpx-toolkit..."
+    echo "Installing Httpx..."
     GO111MODULE=on go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 fi
 
 # Install Httpx-toolkit
-if command_exists httpx; then
+if command_exists httpx-toolkit; then
     echo "Httpx-toolkit is already installed."
 else
     echo "Installing Httpx-toolkit..."
