@@ -1,43 +1,85 @@
 #!/bin/bash
 
+# Function to check if a command exists
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
 # Install Subfinder
-echo "Installing Subfinder..."
-GO111MODULE=on go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+if command_exists subfinder; then
+    echo "Subfinder is already installed."
+else
+    echo "Installing Subfinder..."
+    GO111MODULE=on go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+    
+fi
 
 # Install Assetfinder
-echo "Installing Assetfinder..."
-go get -u github.com/tomnomnom/assetfinder
+if command_exists assetfinder; then
+    echo "Assetfinder is already installed."
+else
+    echo "Installing Assetfinder..."
+    go get -u github.com/tomnomnom/assetfinder
+fi
 
 # Install Findomain
-echo "Installing Findomain..."
-curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
-unzip findomain-linux-i386.zip
-chmod +x findomain
-sudo mv findomain /usr/local/bin/findomain
-rm findomain-linux-i386.zip
+if command_exists findomain; then
+    echo "Findomain is already installed."
+else
+    echo "Installing Findomain..."
+    curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
+    unzip findomain-linux-i386.zip
+    chmod +x findomain
+    sudo mv findomain /usr/local/bin/findomain
+    rm findomain-linux-i386.zip
+fi
 
 # Install Amass
-echo "Installing Amass..."
-GO111MODULE=on go install -v github.com/owasp-amass/amass/v4/...@master
+if command_exists amass; then
+    echo "Amass is already installed."
+else
+    echo "Installing Amass..."
+    GO111MODULE=on go install -v github.com/owasp-amass/amass/v4/...@master
+fi
+
+# Install Httpx
+if command_exists httpx; then
+    echo "Httpx-toolkit is already installed."
+else
+    echo "Installing Httpx-toolkit..."
+    GO111MODULE=on go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+fi
 
 # Install Httpx-toolkit
-echo "Installing Httpx"
-GO111MODULE=on go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-
-# Install Httpx-toolkit
-echo "Installing Httpx-toolkit..."
-sudo apt install httpx-toolkit
+if command_exists httpx; then
+    echo "Httpx-toolkit is already installed."
+else
+    echo "Installing Httpx-toolkit..."
+    sudo apt install httpx-toolkit
 
 # Install Katana
-echo "Installing Katana..."
-GO111MODULE=on go install github.com/projectdiscovery/katana/cmd/katana@latest
+if command_exists katana; then
+    echo "Katana is already installed."
+else
+    echo "Installing Katana..."
+    GO111MODULE=on go install github.com/projectdiscovery/katana/cmd/katana@latest
+fi
 
 # Install Gau
-echo "Installing Gau..."
-GO111MODULE=on go install -v github.com/lc/gau/v2/cmd/gau@latest
+if command_exists gau; then
+    echo "Gau is already installed."
+else
+    echo "Installing Gau..."
+    GO111MODULE=on go install -v github.com/lc/gau/v2/cmd/gau@latest
+fi
 
 # Install Waybackurls
-echo "Installing Waybackurls..."
-go get -u github.com/tomnomnom/waybackurls
+if command_exists waybackurls; then
+    echo "Waybackurls is already installed."
+else
+    echo "Installing Waybackurls..."
+    go get -u github.com/tomnomnom/waybackurls
+fi
 
 echo "All tools installed successfully."
+
