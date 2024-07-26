@@ -19,7 +19,7 @@ if command_exists assetfinder; then
     echo "Assetfinder is already installed."
 else
     echo "Installing Assetfinder..."
-    go get -u github.com/tomnomnom/assetfinder
+    GO111MODULE=on go install -v github.com/tomnomnom/assetfinder@latest
 fi
 
 # Install Findomain
@@ -44,10 +44,10 @@ fi
 
 # Install Httpx
 if command_exists httpx; then
-    echo "Httpx-toolkit is already installed."
+    echo "Httpx is already installed."
 else
     echo "Installing Httpx-toolkit..."
-    GO111MODULE=on go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+    GO111MODULE=on go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 fi
 
 # Install Httpx-toolkit
@@ -56,6 +56,7 @@ if command_exists httpx; then
 else
     echo "Installing Httpx-toolkit..."
     sudo apt install httpx-toolkit
+fi
 
 # Install Katana
 if command_exists katana; then
@@ -78,7 +79,7 @@ if command_exists waybackurls; then
     echo "Waybackurls is already installed."
 else
     echo "Installing Waybackurls..."
-    go get -u github.com/tomnomnom/waybackurls
+    GO111MODULE=on go install github.com/tomnomnom/waybackurls@latest
 fi
 
 echo "All tools installed successfully."
