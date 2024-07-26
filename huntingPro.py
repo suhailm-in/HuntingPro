@@ -254,7 +254,6 @@ def print_title():
                                |___/
 
                 Tool name : Hunting Pro
-                Version   : 3.7
                 Developed by @ SUHAIL M
 
     """
@@ -292,6 +291,7 @@ def main():
     parser.add_argument('-d', '--domain', help='The target domain for active enumeration')
     parser.add_argument('-t', '--target-file', help='File containing a list of target domains for passive enumeration')
     parser.add_argument('-s', '--seconds', type=int, default=120, help='Timeout in seconds for each tool (default: 120 seconds)')
+    parser.add_argument('-v', '--version', action='version', version='HuntingPro 3.7')
     parser.add_argument('-u', '--update', action='store_true', help='Update Hunting Pro to the latest version')
     args = parser.parse_args()
     
