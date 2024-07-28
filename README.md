@@ -26,10 +26,8 @@ Hunting Pro is a powerful subdomain enumeration and URL extraction tool designed
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/suhailm-in/HuntingPro.git
-```
-```bash
-cd HuntingPro
+$ git clone https://github.com/suhailm-in/HuntingPro.git
+$ cd HuntingPro
 ```
 
 ### Step 2: Install Python packages
@@ -38,17 +36,15 @@ pip3 install -r requirements.txt
 ```
 
 ### Step 3: Install external tools
-```
+```bash
 chmod +x install_tools.sh
 ```
-```
+```bash
 ./install_tools.sh
 ```
 
-### or
-```
-pip3 install -r requirements.txt && ./install_tools.sh
-```
+### Note: If you encounter any issues with the tools, please [Install](#acknowledgements) them manually
+
 
 ## Usage
 - To enumerate subdomains for a single domain:
