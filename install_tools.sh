@@ -27,3 +27,8 @@ install_tool "katana" "go install github.com/projectdiscovery/katana/cmd/katana@
 install_tool "gau" "go install github.com/lc/gau/v2/cmd/gau@latest"
 install_tool "waybackurls" "go install github.com/tomnomnom/waybackurls@latest"
 install_tool "git" "sudo apt install -y git"
+
+echo "All tools installed successfully."
+echo "Note: If you encounter any issues with the tools, please install them manually."
+
+
