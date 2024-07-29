@@ -79,14 +79,16 @@ python3 hunterpro.py -d example.com -s 180
 
 The tool generates a folder named Result containing the results. Inside this folder, you will find:
 
-- subdomains_alive.txt: List of alive subdomains
-- katana_urls.txt: URLs extracted using Katana
-- gau_urls.txt: URLs extracted using gau
-- waybackurls.txt: Historical URLs extracted using Waybackurls
-- all_urls.txt: Merged and deduplicated URLs
-- sensitive_files.txt: Extracted sensitive files
-- js_files.txt: Extracted JavaScript files
-- report.txt: Detailed report
+<!-- PROJECT run Screenshot -->
+<h1 align="center">
+  <br>
+  <a href="https://github.com/suhailm-in/HuntingPro"><img src="https://raw.githubusercontent.com/suhailm-in/image/master/Screenshot%20(483).png" alt="Hunting Pro"></a>
+</h1>
+<!-- PROJECT OutPut Screenshot -->
+<h1 align="center">
+  <br>
+  <a href="https://github.com/suhailm-in/HuntingPro"><img src="https://raw.githubusercontent.com/suhailm-in/image/master/Screenshot%20(490).png" alt="Hunting Pro"></a>
+</h1>
 
 ## License
 This project is Licensed under the GNU GPLv3 - see the [LICENSE](LICENSE) for more information.
