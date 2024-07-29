@@ -1,13 +1,11 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
 <h1 align="center">
   <br>
   <a href="https://github.com/suhailm-in/HuntingPro"><img src="https://raw.githubusercontent.com/suhailm-in/image/master/HuntingPro_Logo.png" alt="Hunting Pro"></a>
 </h1>
-
-## About
+<h2 align="center">About</h2>
 
    Hunting Pro is a powerful subdomain enumeration and URL extraction tool designed for security professionals. It performs comprehensive subdomain discovery using multiple sources, checks for active subdomains, extracts URLs with various tools, and identifies sensitive files and JavaScript files. The tool consolidates findings into detailed reports, streamlining the reconnaissance process for effective security assessments and vulnerability detection.
 
