@@ -2,11 +2,10 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/suhailm-in/HuntingPro">
-    <img src="https://raw.githubusercontent.com/suhailm-in/image/master/HuntingPro_Logo.png" alt="Logo" width="550" height="450">
-  </a>
-</div>
+<h1 align="center">
+  <br>
+  <a href="https://github.com/suhailm-in/HuntingPro"><img src="https://raw.githubusercontent.com/suhailm-in/image/master/HuntingPro_Logo.png" alt="Hunting Pro"></a>
+</h1>
 
 ## About
 
