@@ -66,6 +66,8 @@ python3 hunterpro.py -t url.txt
 ```
 python3 hunterpro.py -d example.com -s 180
 ```
+Note: Increasing the timeout value will result in more accurate results, as it allows more time for the tools to complete their operations.
+
 
 ### Options
 
@@ -77,7 +79,7 @@ python3 hunterpro.py -d example.com -s 180
   
 ### Output
 
-The tool generates a folder named Result containing the results. Inside this folder, you will find:
+The tool generates a folder named "Result" containing the results. Inside this folder, you will find:
 
 <!-- PROJECT run Screenshot -->
 <h1 align="center">
