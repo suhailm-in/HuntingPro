@@ -214,6 +214,11 @@ def count_lines(file_path):
 
 
 def generate_report(folder_name):
+    subfinder_count = count_lines(os.path.join(folder_name, 'subfinder.txt'))
+    assetfinder_count = count_lines(os.path.join(folder_name, 'assetfinder.txt'))
+    findomain_count = count_lines(os.path.join(folder_name, 'findomain.txt'))
+    crtsh_count = count_lines(os.path.join(folder_name, 'crtsh.txt'))
+    amass_count = count_lines(os.path.join(folder_name, 'amass.txt'))
     subdomains_count = count_lines(os.path.join(folder_name, 'subdomains.txt'))
     alive_subdomains_count = count_lines(os.path.join(folder_name, 'subdomains_alive.txt'))
     katana_urls_count = count_lines(os.path.join(folder_name, 'katana_urls.txt'))
@@ -231,6 +236,11 @@ def generate_report(folder_name):
         f.write("Report :\n")
         f.write(f"Report Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         f.write("===============================================================\n\n")
+        f.write(f"Subfinder ({subfinder_count}): subfinder.txt\n")
+        f.write(f"Assetfinder ({assetfinder_count}): assetfinder.txt\n")
+        f.write(f"Findomain ({findomain_count}): findomain.txt\n")
+        f.write(f"Crtsh ({crtsh_count}): crtsh.txt\n")
+        f.write(f"Amass ({amass_count}): amass.txt\n")
         f.write(f"Subdomains ({subdomains_count}): subdomains.txt\n")
         f.write(f"Alive Subdomains ({alive_subdomains_count}): subdomains_alive.txt\n")
         f.write(f"Katana URLs ({katana_urls_count}): katana_urls.txt\n")
